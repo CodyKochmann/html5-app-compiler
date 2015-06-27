@@ -7,6 +7,13 @@ This is a script that compiles all of the pages that are called in a html docume
 
 While ajax html construction is nice, apps like tweetdeck or my "3d-css-engine" project have proved that as long as you don't have JavaScript doing insanely intensive things, the app will remain stable even on cheap hardware.
 
+In order to mark that you want to inject code from another file in a certain spot, simply add a line to it like this (note: do keep the syntax to one line per injection.):
+
+``` html
+<!-- INJECT path_to_script.js -->
+<!-- INJECT path_to_stylesheet.css -->
+```
+
 The code blocks are rendered in and out with this method: 
 
 > `addClass("hidden")/removeClass("hidden")`
